@@ -1,0 +1,415 @@
+@font-face
+{
+	font-family: inria;
+	src: url(../fonts/InriaSerif-Regular.ttf);
+}
+
+@font-face
+{
+	font-family: imfell;
+	src: url(../fonts/IMFeENrm29P.ttf);
+}
+
+html, body
+{
+	opacity: 1;
+  margin: 0px;
+	background-color: black;
+	height: 2304px;
+  width: 100%;
+	overflow-x: hidden;
+	animation: 4s colorLoad;
+	animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.wrapper
+{
+	opacity: 0;
+	animation: 4s colorLoad;
+	animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes colorLoad
+{
+  0%   {}
+  100% {opacity: 1; background-color: #671369;}
+}
+
+
+#moonTrigger
+{
+	position: absolute;
+	top: 300px;
+
+}
+
+.moon
+{
+	position: absolute;
+	border-radius: 50%;
+	left: 60px;
+	width: 200px;
+	height: 200px;
+	background-color: #F2EFA8;
+}
+
+.mainText
+{
+	top: 200px;
+	opacity: 1;
+	transform: translateY(200px);
+	transition: all 0.8s ease;
+}
+
+.mainText.visible
+{
+	opacity: 0;
+	transform: none;
+}
+
+.mainTitle
+{
+	position: relative;
+	top: 20px;
+	color: white;
+	font-family: inria;
+	font-size: 4em;
+	text-align: center;
+}
+
+.mainSub
+{
+	position: relative;
+	top: 60px;
+	font-family: imfell;
+	font-style: italic;
+	color: white;
+	font-size: 2em;
+	text-align: center;
+}
+
+.mainSubAlt
+{
+	position: relative;
+	top: 100px;
+	font-family: imfell;
+	padding-left: 280px;
+	padding-right: 280px;
+	color: white;
+	font-size: 2em;
+	text-align: center;
+}
+
+.infoTitle
+{
+	text-align: center;
+	font-family: inria;
+	margin: 0 auto;
+	color: white;
+	font-size: 2em;
+	font-style: italic;
+}
+
+.infoText
+{
+	margin-top: 8px;
+	font-family: imfell;
+	color: white;
+	font-size: 1.6em;
+}
+
+.info1
+{
+	opacity: 0;
+	transform: translateX(-100px);
+	transition: all 0.8s ease-out;
+	position: relative;
+	top: 550px;
+	margin-left: 80px;
+	padding-right: 500px;
+}
+
+.info1.visible
+{
+	opacity: 1;
+	transform: none;
+}
+
+.info2
+{
+	opacity: 0;
+	transform: translateX(100px);
+	transition: all 0.8s ease-out;
+	position: relative;
+	top: 550px;
+	padding-left: 500px;
+	margin-top: 50px;
+	margin-right: 80px;
+}
+
+.info2.visible
+{
+	opacity: 1;
+	transform: none;
+}
+
+.info3
+{
+	opacity: 0;
+	transform: translateX(-100px);
+	transition: all 0.8s ease-out;
+	position: relative;
+	top: 550px;
+	margin-left: 80px;
+	margin-top: 50px;
+	padding-right: 500px;
+}
+
+.info3.visible
+{
+	opacity: 1;
+	transform: none;
+}
+
+.info4
+{
+	opacity: 0;
+	transform: translateX(100px);
+	transition: all 0.8s ease-out;
+	position: relative;
+	top: 550px;
+	padding-left: 500px;
+	margin-top: 50px;
+	margin-right: 80px;
+}
+
+.info4.visible
+{
+	opacity: 1;
+	transform: none;
+}
+
+.clickMoth
+{
+	position: absolute;
+	top: 1898px;
+	left: 460px;
+	width: 60px;
+	height: 140px;
+	z-index: 100;
+	transform: rotateZ(70deg);
+}
+
+.mothman
+{
+	position: absolute;
+	margin-top: 950px;
+	margin-left: 470px;
+	background-image: url("../images/icons/mothmanIcon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 140px;
+	height: 140px;
+	animation: 3s infinite alternate glow;
+}
+
+@keyframes glow
+{
+  0%   {opacity: 100%;}
+  25%  {opacity: 70%;}
+  50%  {opacity: 80%;}
+  100% {opacity: 50%;}
+}
+
+.clickSnally
+{
+	position: absolute;
+	top: 1778px;
+	left: 1275px;
+	width: 80px;
+	height: 80px;
+}
+
+.snallygaster
+{
+	position: absolute;
+	margin-top: 800px;
+	margin-left: 1315px;
+	background-image: url("../images/icons/snallyIcon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+}
+
+.lid
+{
+	position: absolute;
+	top: -80px;
+	background-color: #79567E;
+	width: inherit;
+	height: inherit;
+	border-radius: 42%;
+	animation: 6s infinite blink;
+}
+
+@keyframes blink
+{
+  0%   {top: 0px;}
+  20%  {top: -80px;}
+  90%  {top: -80px;}
+  100% {top: 0px;}
+}
+
+.clickIndrid
+{
+	position: absolute;
+	top: 2065px;
+	left: 650px;
+	width: 100px;
+	height: 185px;
+}
+
+.indridCold
+{
+	opacity: 0;
+	position: absolute;
+	margin-top: 1095px;
+	margin-left: 700px;
+	background-image: url("../images/icons/indridIcon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 200px;
+	animation: 10s infinite fade;
+}
+
+@keyframes fade
+{
+  0%   {opacity: 0;}
+  40%  {opacity: 70%;}
+  50%  {opacity: 70%;}
+	80%  {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+.clickGef
+{
+	position: absolute;
+	top: 2200px;
+	left: 1550px;
+	width: 120px;
+	height: 50px;
+	animation: 15s infinite scamperAlt;
+}
+
+.gef
+{
+	opacity: 1;
+	position: absolute;
+	margin-top: 1235px;
+	margin-left: 1600px;
+	background-image: url("../images/icons/gefIcon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 120px;
+	height: 100px;
+	animation: 15s infinite scamper;
+}
+
+@keyframes scamper
+{
+  0%   {margin-left: 1600px;}
+  30%  {margin-left: 1500px;}
+	60%  {background-image: url("../images/icons/gefIcon.png")}
+	61%  {background-image: url("../images/icons/altgefIcon.png")}
+  70%  {margin-left: -300px;}
+	99%  {background-image: url("../images/icons/altgefIcon.png")}
+  100% {margin-left: 1600px; background-image: url("../images/icons/gefIcon.png")}
+}
+
+@keyframes scamperAlt
+{
+  0%   {left: 1550px;}
+  30%  {left: 1450px;}
+  70%  {left: -350px;}
+  100% {left: 1550px;}
+}
+
+.nightCrawler
+{
+	transform-origin: 100% 100%;
+	transform: rotateZ(-90deg);
+	position: absolute;
+	left: -10px;
+	background-image: url("../images/icons/crawlerIcon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	animation: 10s infinite alternate float;
+}
+
+@keyframes float
+{
+  0%   {transform: rotateZ(-90deg);}
+  40%  {transform: rotateZ(0deg);}
+  60%  {transform: rotateZ(0deg);}
+  100% {transform: rotateZ(-90deg);}
+}
+
+#scene
+{
+	background-color: #671369;
+	position: absolute;
+	margin-top: 200px;
+	top: 768px;
+	left: -50px;
+	/**width: 140%;**/
+	width: 1600px;
+	height: 180%;
+	overflow: hidden;
+}
+
+.frontLayer
+{
+	width: 100%;
+	height: 1536px;
+	background-image: url("../images/background/back.png");
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+.midLayer
+{
+	width: 100%;
+	height: 1536px;
+	background-image: url("../images/background/mid.png");
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+.backLayer
+{
+	width: 100%;
+	height: 1536px;
+	background-image: url("../images/background/front.png");
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+.ground
+{
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(137,97,143,1) 84%, rgba(137,97,143,1) 100%);
+	position: absolute;
+	top: 2250px;
+	/*top: 1884px;*/
+	width: 120%;
+	height: 100px;
+	overflow-y: hidden;
+}

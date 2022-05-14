@@ -1,0 +1,123 @@
+@font-face
+{
+	font-family: inria;
+	src: url(../fonts/InriaSerif-Regular.ttf);
+}
+
+@font-face
+{
+	font-family: imfell;
+	src: url(../fonts/IMFeENsc29P.ttf);
+}
+
+html, body
+{
+  margin:0px;
+  height: 100%;
+  width: 100%;
+}
+
+h1
+{
+  color: white;
+  font-family: inria;
+  font-size: 3em;
+}
+
+h2
+{
+  color: white;
+  font-family: inria;
+  font-size: 2.4em;
+}
+
+.page
+{
+  background-color: #303538;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.title
+{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.altTitle
+{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.altText
+{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.switchFull
+{
+  height: 280px;
+  width:280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.board
+{
+  height: inherit;
+  width: inherit;
+  border-radius: 12px;
+  background: #edece1;
+}
+
+.switch
+{
+  opacity: 1;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 130px;
+  border: 1px black;
+}
+
+.indicator
+{
+  background: #edece1;
+  position: relative;
+  left: 3px;
+  top: 2px;
+  width: 74px;
+  height: 90px;
+}
+
+.flipYes
+{
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flipNo
+{
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
